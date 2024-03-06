@@ -1,15 +1,15 @@
-import footer from "./footer/footer";
+import Footer from "./components/Footer";
+import footer from "./components/Footer";
+import Header from "./components/Header";
+
+import "./globals.css";
+
 export default function App() {
 
   return(
-<main>
-
-<footer/>
-<footer/>
-<footer/>
-<footer/>
-
-</main>
-
+<div>
+  <Header/>
+  <Footer/>
+</div>
 );
 }
