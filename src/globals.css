@@ -1,15 +1,38 @@
 
-header{
-    margin-top: 0;
-    background-color: blue;
-    font-family: Apple Chancery, cursive;
-    
+html{
+    height: 100%;
+    width: 100%;
+    background-image: URL(https://hfside.com.br/wp-content/uploads/2019/01/fundo-header.jpg);
 }
 
+
+
+header{
+    background-color:#04213a;
+    color: rgb(199, 193, 193);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: Apple Chancery, cursive;
+    background: linear-gradient(#072844,#033c6d,#05447a);
+    border-radius: 20px;
+    border-style: ridge;
+    border-color: #063661;
+}
+
+
 footer{
+    display: flex;
     border: 10px solid transparent;
     font-style: italic;
-    background-color: rgb(213, 213, 216);
-    color: rgb(66, 66, 66);
+    background-color:#04213a;
+    height:15px;
+    align-items: center;
+    color: rgb(199, 193, 193);
     margin-top: 35%;
+    font-size: 15px;
+    border-radius: 3px;
+    border: 1px;
+    border-color: #010c16;
+    border-style: solid;
 }
