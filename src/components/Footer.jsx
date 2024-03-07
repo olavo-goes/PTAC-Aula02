@@ -2,7 +2,7 @@ export default function Footer (){
 
 return(
     <footer>
-        <h1>Olavo cesar oliveira maciel goes</h1>
+        <p>© Todos os direitos reservados Olavo Goes</p>
     </footer>
 );
 

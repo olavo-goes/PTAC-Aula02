@@ -1,7 +1,15 @@
+
 header{
+    margin-top: 0;
     background-color: blue;
+    font-family: Apple Chancery, cursive;
+    
 }
 
 footer{
-    background-color: blueviolet;
+    border: 10px solid transparent;
+    font-style: italic;
+    background-color: rgb(213, 213, 216);
+    color: rgb(66, 66, 66);
+    margin-top: 35%;
 }
