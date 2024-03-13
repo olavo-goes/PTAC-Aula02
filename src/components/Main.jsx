@@ -10,12 +10,8 @@ export default function Main (){
           nome=""
           id=""
           onChenge={(event) => setNome(event.target.value)}
-          
-          
-          
           />
-
-
+        {nome}
         </Main>
     )
 }
