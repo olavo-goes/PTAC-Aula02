@@ -1,11 +1,20 @@
-export { useState } from "react"
+import { useState } from "react"
 
 export default function Main (){
-    const [nome, setNome] = useState("");
+    const [nome, setNome] = useState("Nome");
     return(
         <Main>
 
-           <input type="text" nome="nome" id="" onChange={(event) => setNome(event.target.value)} />
+          <imput
+          type="text"
+          nome=""
+          id=""
+          onChenge={(event) => setNome(event.target.value)}
+          
+          
+          
+          />
+
 
         </Main>
     )
