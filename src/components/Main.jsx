@@ -5,21 +5,37 @@ export default function Main(){
 
 const [nome, setNome] = useState("");
 const [telefone, setTelefone] = useState("");
+const [listaContatos,setContatos] = useState([]);                    // estado inicial para uma lista
+
+const registrar = (event) => {
+    event.preventDefault();  // serve para previnir o envio do formulario, ou seja não vai mais enviar o formulario apenas salvas as informações.
+    alert("deu certo");
+    setContatos([...listaContatos,{
+        nomeSalvo: nome,                                      // coloca na lista os usuarios e salva o nome 
+        telefone: telefone                                    // 
+    } ]); // modifica a lista e adiciona objetos.
+
+}
+console.table(listaContatos);                       // exibe as informações em formato de tabela.
+
+
+
 
     return(
         <main>
-
+            <form onSubmit={registrar}>
+            <label htmlFor="nome">nome</label>
         <input
         type="text"
-        nome=""
-        id=""
+        nome="nome-contato"
+        id="nome"
+        value={nome}
         onChange={(event) => setNome(event.target.value)}
         />
         {nome}
         
-    
-<form>
-    <label For ="telefone">Telefone:</label>
+ 
+    <label htmlFor ="telefone">Telefone:</label>
     
         <input
         type="tel"
