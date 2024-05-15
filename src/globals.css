@@ -1,3 +1,7 @@
+
+
+
+
 html{
     height: 100%;
     width: 100%;
@@ -6,15 +10,14 @@ html{
 
 header{
     background-color:#04213a;
-    color: rgb(199, 193, 193);
+    color: rgb(0, 0, 0);
     width: 100%;
     display: flex;
     justify-content: center;
     font-family: Apple Chancery, cursive;
-    background: linear-gradient(#072844,#033c6d,#05447a);
+    background: #ffffff;
     border-radius: 20px;
     border-style: ridge;
-    border-color: #063661;
 }
 
 
@@ -22,10 +25,10 @@ footer{
     display: flex;
     border: 10px solid transparent;
     font-style: italic;
-    background-color:#04213a;
+    background-color:#ffffff;
     height:15px;
     align-items: center;
-    color: rgb(199, 193, 193);
+    color: rgb(0, 0, 0);
     margin-top: 35%;
     font-size: 15px;
     border-radius: 3px;
