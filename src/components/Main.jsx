@@ -22,6 +22,23 @@ const registrar = (event) => {
 
 console.table(listaContatos);                       // exibe as informações em formato de tabela.
 
+const remover = (id) => {
+    const novaLista = listaContatos.filter(
+        (contato,index)=>{
+            if(index !== id){
+                return contato
+            }
+            else{
+                return null 
+            }
+        }
+    );
+
+    setContatos(novaLista);
+
+}
+
+
 return(
     <main>
         <form onSubmit={registrar}>
@@ -74,6 +91,23 @@ onChange={(event) => setNumero(event.target.value)}
 </div>
 
 )}    
+
+
+{listaContatos.map((contato, index)=>
+
+<div keu = {index}>
+
+<p>{contato.nomeSalvo}</p>
+<p>{contato.telefone}</p>
+<button onClick={()=> remover (index)}>X</button>
+
+</div>
+
+
+
+
+)}
+
 
 
 
